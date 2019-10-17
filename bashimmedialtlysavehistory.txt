@@ -1,0 +1,6 @@
+in .bashrc
+#History: save immediately
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND" 
+
+
+

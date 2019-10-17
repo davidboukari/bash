@@ -1,0 +1,10 @@
+Exec several cmd with find
+
+$ find . -iname Vagrantfile -exec sh -c "grep 192.168.100.10 {} && echo {}" \;
+
+    gl1.vm.network "private_network", ip: "192.168.100.10" , auto_config: true
+./terraform/vm/Vagrantfile
+    pt1.vm.network "private_network", ip: "192.168.100.10" , auto_config: true
+./promotheus/vm/Vagrantfile
+
+$ find . -iname Vagrantfile -exec grep 192.168.100.10 {} + -exec echo {} \;

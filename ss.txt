@@ -1,0 +1,6 @@
+ss -ltupn
+-l: listen
+-t: tcp
+-u: udp
+-p: prg
+-n: numeric do not resolve

@@ -1,0 +1,3 @@
+#rsync but ignore some files pdk*
+
+rsync -avz --exclude 'pdk*' /opt/puppetlabs ./opt_puppetlabs
